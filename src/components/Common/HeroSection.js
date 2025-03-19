@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import './HeroSection.css';
 
 const HeroSection = ({ title, subtitle, bgImage }) => {
@@ -7,7 +8,7 @@ const HeroSection = ({ title, subtitle, bgImage }) => {
       <div className="hero-content">
         <h1>{title}</h1>
         <p>{subtitle}</p>
-        <button className="cta-button">Book Now</button>
+        <Link to="/booking" className="cta-button">Book Now</Link>
       </div>
     </div>
   );

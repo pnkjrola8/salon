@@ -1,0 +1,25 @@
+.booking-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.booking-content {
+  display: flex;
+  gap: 40px; /* Space between Booking form and Appointments list */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.booking-content > * {
+  flex: 1; /* Equal width for both sections */
+}
+
+@media (max-width: 768px) {
+  .booking-content {
+    flex-direction: column; /* Stack vertically on smaller screens */
+  }
+}
